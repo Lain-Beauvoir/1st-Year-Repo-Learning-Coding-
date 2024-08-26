@@ -10,6 +10,6 @@ using namespace std;
     cin >> rad;
     
     int radrad = ( rad*rad );
-    cout << "The circumference of your circle is: " << ( 3.14*radrad );
+    cout << "The area of your circle is: " << ( 3.14*radrad );
     
     }
