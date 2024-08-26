@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+// second code for ICT class
+
+    int main() {
+        
+        int a, b, c;
+
+        cout << "Please enter your A: ";
+        cin >> a;
+        
+        cout << "Please enter your B: ";
+        cin >> b;
+        
+        cout << "Please enter your C: ";
+        cin >> c;
+
+        int x = ( b*b), y = ( a*c ), d = ( x-4*y );
+        
+        cout << "your discriminant is: " << d << endl;
+        
+    }
