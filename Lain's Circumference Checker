@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+// fifth code for ICT class
+
+    int main() {
+    int rad;
+    
+    cout << "Insert the radius of your circle: ";
+    cin >> rad;
+    
+    int radrad = ( rad*rad );
+    cout << "The circumference of your circle is: " << ( 3.14*radrad );
+    
+    }
