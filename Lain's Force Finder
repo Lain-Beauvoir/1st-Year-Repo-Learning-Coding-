@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+// fourth code for ICT class
+
+    int main() {
+        
+        int mass, accel;
+        
+        cout << "Insert the object's mass in kilograms: ";
+        cin >> mass;
+        
+        cout << "Insert the speed of the object's acceleration in meter per second squared: ";
+        cin >> accel;
+        
+        int newt = ( mass*accel );
+        
+        cout << "The object's force is " << newt << " newton";
+    }
