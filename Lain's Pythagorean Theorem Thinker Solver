@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 //third code for ICT class
@@ -19,7 +20,7 @@ using namespace std;
 
     cout << "C squared is: " << ctwo << endl;
 
-    int c = sqrt(ctwo);
+    double c = sqrt(ctwo);
 
     cout << "The value of your C is: " << c;
 
