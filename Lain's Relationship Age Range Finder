@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+	int main() {
+	int aage;
+	cout << "Welcome to the age gap finder! We will find your partner's ideal age :3" << endl;
+	cout << "Please input your current age... ";
+	cin >> aage;
+	
+	int bage = (aage-2), cage = (aage+2);
+	
+	if (aage < 16)
+		cout << "Minor Detected, you can not have a relationship! Study hard, don't be hard or soft!";
+		else
+		
+	if (aage >= 16)
+		cout << "Youre ideal partner's age range is... " << bage << " - " << cage;
+	}
