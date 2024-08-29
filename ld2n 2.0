@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+#include <cmath>
 using namespace std;
 
 	int main() {
@@ -39,18 +41,32 @@ using namespace std;
     }
     
     cout << "\n";
+  
+   if (d != 0) {
+   
+	string consent;
     
-    int consent;
+   	cout << "Would you like to solve for the roots of the quadratic equation?.." << endl;
     
-    cout << "Would you like to solve for the root of the quadratic equation?.." << endl;
+    	cout << "Enter 'yes' or 'no': ";
+    	cin >> consent;
     
-    cout << "1 (Yes) or 0 (No): ";
-    cin >> consent;
+	for (auto &c : consent) {
+        c = tolower(c);
+    	}
     
-    if ( consent == 1 ) {
-        int z1 = ( -b + sqrt(d) ), w = ( 2*a ), j1 = ( z1/w ), z2 = ( -b - sqrt(d) ), j2 = ( z2/w );
-        cout << "\nThe first solution is " << j1 << " while the second solution is " << j2;
-    } else if ( consent == 0 ) {
-        cout << "\nThank you for using Lain's Discriminant Nature Determiner! Have a good day!";
+    	if (consent == "yes") {
+        	if (d >= 0) {
+            		double root1 = (-b + sqrt(d)) / (2 * a);
+            		double root2 = (-b - sqrt(d)) / (2 * a);
+           		cout << "\nThe first solution is " << root1 << " while the second solution is " << root2 << "." << endl;
+        	} else {
+            		cout << "\nThe roots are imaginary and cannot be solved using real numbers." << endl;
+        	}
+    		} else if (consent == "no") {
+        	cout << "\nThank you for using Lain's Discriminant Nature Determiner! Have a good day!" << endl;
+    		} else {
+        	cout << "\nInvalid input. Please enter 'yes' or 'no'." << endl;
+    		}
 	}
-	}
+}
