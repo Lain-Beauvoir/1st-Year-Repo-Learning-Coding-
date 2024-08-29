@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+	int main() {
+	
+	int a, b, c;
+	cout << "Welcome to the L2DN: Lain's Discriminant Nature Determiner..." << endl;
+	
+	cout << "\n";
+	
+	cout << "Insert the value of your A: ";
+	cin >> a;
+
+	cout << "Insert the value of your B: ";
+	cin >> b;
+
+	cout << "Insert the value of your C: ";
+	cin >> c;
+	
+	cout << "\n";
+	
+	int x = (b*b), y = (a*c), d = (x-4*y);
+
+	cout << "The quadratic equation's discriminant is... " << d << endl;
+
+	int squa = ( d > 0 ), imag = ( d < 0 ), zero = ( d == 0 );
+
+    if (squa == 1) {
+        int sqrtd = sqrt(d);
+        if (sqrtd * sqrtd == d) {
+            cout << "The roots are real, rational, and unequal." << endl;
+        } else {
+            cout << "The roots are real, irrational, unequal." << endl;
+        }
+    } else if (imag == 1) {
+        cout << "The nature of the roots is imaginary or not real." << endl;
+    } else if (zero == 1) {
+        cout << "The nature of the roots is real, rational, and equal." << endl;
+    }
+
+
+	}
