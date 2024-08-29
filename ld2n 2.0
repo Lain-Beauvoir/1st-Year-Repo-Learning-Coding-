@@ -46,27 +46,30 @@ using namespace std;
    
 	string consent;
     
-   	cout << "Would you like to solve for the roots of the quadratic equation?.." << endl;
+    cout << "Would you like to solve for the roots of the quadratic equation?.." << endl;
     
-    	cout << "Enter 'yes' or 'no': ";
-    	cin >> consent;
+    cout << "Enter 'yes' or 'no': ";
+    cin >> consent;
     
-	for (auto &c : consent) {
+for (auto &c : consent) {
         c = tolower(c);
-    	}
+    }
     
-    	if (consent == "yes") {
-        	if (d >= 0) {
-            		double root1 = (-b + sqrt(d)) / (2 * a);
-            		double root2 = (-b - sqrt(d)) / (2 * a);
-           		cout << "\nThe first solution is " << root1 << " while the second solution is " << root2 << "." << endl;
-        	} else {
-            		cout << "\nThe roots are imaginary and cannot be solved using real numbers." << endl;
-        	}
-    		} else if (consent == "no") {
-        	cout << "\nThank you for using Lain's Discriminant Nature Determiner! Have a good day!" << endl;
-    		} else {
-        	cout << "\nInvalid input. Please enter 'yes' or 'no'." << endl;
-    		}
-	}
+    if (consent == "yes") {
+        if (d >= 0) {
+            double root1 = (-b + sqrt(d)) / (2 * a);
+            double root2 = (-b - sqrt(d)) / (2 * a);
+            cout << "\nThe first solution is " << root1 << " while the second solution is " << root2 << "." << endl;
+        } else {
+            cout << "\nThe roots are imaginary and cannot be solved using real numbers." << endl;
+        }
+    } else if (consent == "no") {
+        cout << "\nThank you for using Lain's Discriminant Nature Determiner! Have a good day!" << endl;
+    } else {
+        cout << "\nInvalid input. Please enter 'yes' or 'no'." << endl;
+    }
+} else {
+    cout << "Thank you for using Lain's Discriminant Nature Determiner! Have a good day!" << endl;
+}
+
 }
